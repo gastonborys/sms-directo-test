@@ -49,8 +49,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.post('/api', (req, res) => {
 	const { username, password, ani, dnis, message, command, serviceType, longMessageMode } = req.query;
-	console.log(`${username}: ${USERNAME}`);
-	console.log(`${username}: ${PASSWORD}`);
 	
 	if (username === USERNAME && password === PASSWORD) {
 
