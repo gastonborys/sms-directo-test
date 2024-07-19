@@ -1,0 +1,5 @@
+#/bin/sh
+docker stop sms-directo-test
+docker rm sms-directo-test
+docker image rm sms-directo-mock
+docker build -t sms-directo-mock .
